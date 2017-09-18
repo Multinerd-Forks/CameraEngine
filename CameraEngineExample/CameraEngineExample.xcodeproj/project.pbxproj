@@ -7,15 +7,31 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3BE858DA1F6C49740088518B /* CameraEngine.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3BE858D91F6C49740088518B /* CameraEngine.framework */; };
+		3BE858DB1F6C49740088518B /* CameraEngine.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 3BE858D91F6C49740088518B /* CameraEngine.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		BB3B05D31D8C242A00165E2C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB3B05D21D8C242A00165E2C /* AppDelegate.swift */; };
 		BB3B05D51D8C242A00165E2C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB3B05D41D8C242A00165E2C /* ViewController.swift */; };
 		BB3B05D81D8C242A00165E2C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BB3B05D61D8C242A00165E2C /* Main.storyboard */; };
 		BB3B05DA1D8C242A00165E2C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BB3B05D91D8C242A00165E2C /* Assets.xcassets */; };
 		BB3B05DD1D8C242A00165E2C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BB3B05DB1D8C242A00165E2C /* LaunchScreen.storyboard */; };
-		BB9DFAD61D8C4D95001E7B35 /* CameraEngine.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BB9DFAD51D8C4D95001E7B35 /* CameraEngine.framework */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		3BE858DC1F6C49740088518B /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				3BE858DB1F6C49740088518B /* CameraEngine.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		3BE858D91F6C49740088518B /* CameraEngine.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = CameraEngine.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BB3B05CF1D8C242A00165E2C /* CameraEngineExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CameraEngineExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BB3B05D21D8C242A00165E2C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BB3B05D41D8C242A00165E2C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -31,7 +47,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BB9DFAD61D8C4D95001E7B35 /* CameraEngine.framework in Frameworks */,
+				3BE858DA1F6C49740088518B /* CameraEngine.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -41,6 +57,7 @@
 		BB3B05C61D8C242900165E2C = {
 			isa = PBXGroup;
 			children = (
+				3BE858D91F6C49740088518B /* CameraEngine.framework */,
 				BB3B05D11D8C242A00165E2C /* CameraEngineExample */,
 				BB3B05D01D8C242A00165E2C /* Products */,
 				BB9DFAD41D8C4D95001E7B35 /* Frameworks */,
@@ -86,6 +103,7 @@
 				BB3B05CB1D8C242A00165E2C /* Sources */,
 				BB3B05CC1D8C242A00165E2C /* Frameworks */,
 				BB3B05CD1D8C242A00165E2C /* Resources */,
+				3BE858DC1F6C49740088518B /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -108,7 +126,8 @@
 				TargetAttributes = {
 					BB3B05CE1D8C242A00165E2C = {
 						CreatedOnToolsVersion = 8.0;
-						DevelopmentTeam = 44Q2J6374R;
+						DevelopmentTeam = P5JT2EJ8DP;
+						LastSwiftMigration = 0900;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -273,12 +292,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 44Q2J6374R;
+				DEVELOPMENT_TEAM = P5JT2EJ8DP;
 				INFOPLIST_FILE = CameraEngineExample/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.remirobert.CameraEngineExample;
+				PRODUCT_BUNDLE_IDENTIFIER = io.multinerd.cameraKit;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
+				SWIFT_VERSION = 4.0;
 			};
 			name = Debug;
 		};
@@ -286,12 +306,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 44Q2J6374R;
+				DEVELOPMENT_TEAM = P5JT2EJ8DP;
 				INFOPLIST_FILE = CameraEngineExample/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.remirobert.CameraEngineExample;
+				PRODUCT_BUNDLE_IDENTIFIER = io.multinerd.cameraKit;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
+				SWIFT_VERSION = 4.0;
 			};
 			name = Release;
 		};
